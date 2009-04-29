@@ -1,0 +1,51 @@
+---
+layout: default
+title:  koraktor
+projects:
+  - name:        Steam Condenser
+    description: A multi-language library for querying the Steam Community,
+                 Source, GoldSrc servers and Steam master servers
+    url:         http://github.com/koraktor/steam-condenser
+  - name:        acts_as_git_versioned
+    description: A proof-of-concept Rails plugin implementing versioning of
+                 ActiveRecords using Git
+    url:         http://github.com/koraktor/acts_as_git_versioned
+links:
+  - name: GitHub Profile
+    url:  http://github.com/koraktor
+  - name: University of Applied Sciences Saarbrücken
+    url:  http://www.htw-saarland.de
+---
+
+<div id="avatar">
+  <img src="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7" />
+</div>
+
+<h1>{{ page.title }}</h1>
+
+<h2>About me</h2>
+<div class="text">
+  I'm a guy from Germany and at the moment I'm working on my Master in Computer
+  Science and Communication Systems. In my time off I love to code for several
+  projects, some of them have been released as open source and can be seen
+  below.
+</div>
+
+<h2>Open Source Projects</h2>
+<ul>
+{% for project in page.projects %}
+  <li>
+    <a href="{{ project.url }}">
+      {{ project.name }}<br />
+      <span class="description">{{ project.description }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Links</h2>
+<ul>
+{% for link in page.links %}
+  <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+{% endfor %}
+</ul>
