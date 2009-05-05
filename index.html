@@ -11,12 +11,12 @@ projects:
                  ActiveRecords using Git
     url:         http://github.com/koraktor/acts_as_git_versioned
 links:
-  - name: GitHub Profile
+  - name: GitHub profile
     url:  http://github.com/koraktor
-  - name: University of Applied Sciences Saarbrücken
-    url:  http://www.htw-saarland.de
   - name: Ohloh profile
     url:  http://www.ohloh.net/accounts/Koraktor
+  - name: University of Applied Sciences Saarbrücken
+    url:  http://www.htw-saarland.de
 ---
 
 <div id="avatar">
@@ -37,7 +37,7 @@ links:
 <ul>
 {% for project in page.projects %}
   <li>
-    <a href="{{ project.url }}">
+    <a href="{{ project.url }}">
       {{ project.name }}<br />
       <span class="description">{{ project.description }}</span>
     </a>
@@ -48,6 +48,6 @@ links:
 <h2>Links</h2>
 <ul>
 {% for link in page.links %}
-  <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+  <li><a href="{{ link.url }}">{{ link.name }}</a></li>
 {% endfor %}
 </ul>
