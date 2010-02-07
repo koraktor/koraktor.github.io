@@ -1,18 +1,15 @@
----
-now: Time.now
----
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-    
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
-    
+
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Sebastian Staudt" />
-    
+
     <title>{{ page.title }}</title>
-    
+
     {% include google_analytics %}
   </head>
   <body>
@@ -20,9 +17,9 @@ now: Time.now
       {{ content }}
     </div>
     <div id="footer">
-      2009 &mdash; Sebastian Staudt
+      {{ site.time | date: "%Y" }} &mdash; Sebastian Staudt
     </div>
   </body>
 </html>
 
-<!-- This page has been last updated on {{ page.now | date: "%m/%d/%Y" }} -->
+<!-- This page has been last updated on {{ site.time | date: "%m/%d/%Y" }} -->
