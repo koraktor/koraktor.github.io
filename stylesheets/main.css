@@ -1,5 +1,5 @@
 body {
-  background:  #eeeeff;
+  background:  #c5d9e3;
   color:       #222222;
   font-family: Sans-Serif;
   font-size:   12pt;
@@ -7,31 +7,33 @@ body {
 }
 
 a {
+  color: #dddddd;
   text-decoration: none;
 }
 
 a:link:hover, a:visited:hover {
-  color: #aaaadd;
+  text-shadow:     #16638a 2px 2px 1px;
 }
 
-a:link {
-  color: #999999;
-}
-
-a:visited {
-  color: #999999;
+a:link, a:visited {
+  text-shadow:     #48758c 1px 1px 1px;
 }
 
 div#avatar {
-  border: 2px solid #999999;
-  float:  right;
-  height: 80px;
-  width:  80px;
+  border-radius: 5px;
+  float:         right;
+  height:        80px;
+  width:         80px;
+
+  -moz-border-radius:    5px;
+  -moz-box-shadow:       0 0 5px 5px #ffffff;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow:    0 0 5px 5px #ffffff;
 }
 
 div#content {
   background:  #555555;
-  border-left: 5px solid #aaaadd;
+  border-left: 5px solid #48758c;
   color:       #aaaaaa;
   margin:      0px auto;
   padding:     20px;
@@ -39,12 +41,17 @@ div#content {
 }
 
 div#footer {
-  background: #aaaadd;
-  color:      #ffffff;
-  margin:     0px auto;
-  padding:    0px 22px 0px 22px;
-  text-align: center;
-  width:      501px;
+  background:    #48758c;
+  border-radius: 0 0 5px 5px;
+  color:         #ffffff;
+  margin:        0px auto;
+  padding:       0px 22px 0px 22px;
+  text-align:    center;
+  text-shadow:   #333333 1px 1px 1px;
+  width:         501px;
+
+  -moz-border-radius:    0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
 }
 
 div.text {
@@ -53,21 +60,39 @@ div.text {
 
 h1 {
   font-family: Monospace;
+  text-shadow: #000000 2px 2px 4px;
 }
 
 h2 {
-  border-bottom: 2px solid #aaaadd;
+  border-bottom: 2px solid #48758c;
   color:         #dddddd;
   font-family:   Monospace;
+  text-shadow:   #333333 1px 1px 1px;
 }
 
-li {
-  border-bottom: 1px dashed #444444;
+ul li a {
+  display: block;
+  padding: 5px;
+}
+
+ul li a:hover {
+  background: #666666;
+}
+
+ul.projects li {
+  border-bottom:  1px dashed #666666;
+  margin-top:     5px;
+  padding-bottom: 5px;
+}
+
+ul.projects li:last-child {
+  border-bottom: none;
 }
 
 span.description {
   color:     #bbbbbb;
   font-size: 10pt;
+  text-shadow: none !important;
 }
 
 ul {
