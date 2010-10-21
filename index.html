@@ -2,16 +2,6 @@
 layout: default
 title:  koraktor
 projects:
-  - name:        Macnancy
-    description: A small plugin for Palantír showing the progress of a pregnancy
-    url:         http://koraktor.github.com/palantir/macnancy
-  - name:        Palantír
-    description: Palantír is a MacOS X notification app extendable through
-                 plugins
-    url:         http://koraktor.github.com/palantir
-  - name:        Palantír GMail
-    description: A plugin for Palantír showing your GMail inbox
-    url:         http://koraktor.github.com/palantir/gmail
   - name:        Rubikon
     description: A simple to use, yet powerful Ruby framework for building
                  console-based applications.
@@ -20,6 +10,19 @@ projects:
     description: A multi-language library for querying the Steam Community,
                  Source, GoldSrc servers and Steam master servers
     url:         http://koraktor.github.com/steam-condenser
+contributions:
+  - name: GitHub Services
+    url:  http://github.com/github/github-services
+  - name: GitX (brotherbard's fork)
+    url:  http://github.com/brotherbard/gitx
+  - name: Glyph
+    url:  http://www.h3rald.com/glyph
+  - name: Homebrew
+    url:  http://mxcl.github.com/homebrew
+  - name: Jekyll
+    url:  http://jekyllrb.com
+  - name: RubyGems.org
+    url:  http://rubygems.org
 links:
   - name: GitHub profile
     url:  http://github.com/koraktor
@@ -52,6 +55,17 @@ links:
       <span class="description">{{ project.description }}</span>
     </a>
   </li>
+{% endfor %}
+</ul>
+You can find more projects I created in
+<a href="http://github.com/koraktor">my GitHub profile</a>.
+
+<h2>Contributions</h2>
+Additionally, I made some &ndash; more or less important &ndash; contributions
+to other great open source projects:
+<ul>
+{% for contribution in page.contributions %}
+  <li><a href="{{ contribution.url }}">{{ contribution.name }}</a></li>
 {% endfor %}
 </ul>
 
