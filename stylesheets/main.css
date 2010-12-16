@@ -63,6 +63,15 @@ h1 {
   text-shadow: #000000 2px 2px 4px;
 }
 
+h1 em {
+  color:        #777777;
+  display:      block;
+  font-size:    11pt;
+  font-style:   normal;
+  padding-left: 20px;
+  text-shadow:  #333333 1px 1px 2px;
+}
+
 h2 {
   border-bottom: 2px solid #48758c;
   color:         #dddddd;
@@ -76,7 +85,10 @@ ul li a {
 }
 
 ul li a:hover {
-  background: #666666;
+  background:    #666666;
+  border-radius: 5px;
+
+  -moz-border-radius: 5px;
 }
 
 ul.projects li {
