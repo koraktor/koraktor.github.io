@@ -3,20 +3,20 @@ body {
   color:       #222222;
   font-family: Sans-Serif;
   font-size:   12pt;
-  margin-top:  0px;
+  /*margin-top:  0px;*/
 }
 
-a {
-  color: #dddddd;
-  text-decoration: none;
+div#content a {
+  color: #dddddd !important;
+  text-decoration: none !important;
 }
 
-a:link:hover, a:visited:hover {
-  text-shadow:     #16638a 2px 2px 1px;
+div#content a:link:hover, div#content a:visited:hover {
+  text-shadow: #16638a 2px 2px 1px;
 }
 
-a:link, a:visited {
-  text-shadow:     #48758c 1px 1px 1px;
+div#content a:link, div#content a:visited {
+  text-shadow: #48758c 1px 1px 1px;
 }
 
 div#avatar {
@@ -35,23 +35,28 @@ div#content {
   background:  #555555;
   border-left: 5px solid #48758c;
   color:       #aaaaaa;
-  margin:      0px auto;
   padding:     20px;
-  width:       500px;
 }
 
 div#footer {
   background:    #48758c;
   border-radius: 0 0 5px 5px;
   color:         #ffffff;
-  margin:        0px auto;
-  padding:       0px 22px 0px 22px;
+  padding:       0px 23px 0px 22px;
   text-align:    center;
   text-shadow:   #333333 1px 1px 1px;
-  width:         501px;
 
   -moz-border-radius:    0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
+}
+
+div#sidebar {
+  padding-top: 5em;
+  text-align:  center;
+}
+
+.FlattrButton {
+  margin-top: 2em;
 }
 
 div.text {

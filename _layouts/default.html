@@ -1,25 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en">
   <head>
     <link rel="shortcut icon" href="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7?s=32" type="image/png" />
     <link rel="icon" href="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7?s=32" type="image/png" />
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+    <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+          (function() {
+              var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+              t.parentNode.insertBefore(s, t);
+          })();
+      /* ]]> */
+    </script>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Sebastian Staudt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ page.title }}</title>
 
     {% include google_analytics %}
   </head>
   <body>
-    <div id="content">
-      {{ content }}
-    </div>
-    <div id="footer">
-      {{ site.time | date: "%Y" }} &mdash; Sebastian Staudt
+    <div class="container">
+      <div class="row">
+        <div id="content" class="span6 offset3">
+          {{ content }}
+        </div>
+        <div id="sidebar" class="span2 offset10" data-spy="affix" data-offset-top="0">
+          <script data-gittip-username="koraktor"
+                  src="https://www.gittip.com/assets/widgets/0002.js">
+          </script>
+          <a class="FlattrButton" style="display:none;" href="https://flattr.com/profile/Koraktor"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div id="footer" class="span6 offset3">
+          {{ site.time | date: "%Y" }} – Sebastian Staudt
+        </div>
+      </div>
     </div>
   </body>
 </html>
