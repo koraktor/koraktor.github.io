@@ -1,7 +1,11 @@
 ---
 layout: default
 title:  koraktor
-projects:
+closed:
+  - name:        Suitcase
+    description: An iOS inventory viewer for Steam games
+    url:         suitcase
+open:
   - name:        braumeister.org
     description: An online package browser for Homebrew, the OS X package manager.
     url:         http://braumeister.org
@@ -78,9 +82,21 @@ links:
   below.
 </div>
 
+<h2>Projects</h2>
+<ul class="projects">
+{% for project in page.closed %}
+  <li>
+    <a href="{{ project.url }}">
+      {{ project.name }}<br />
+      <span class="description">{{ project.description }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
 <h2>Open Source Projects</h2>
 <ul class="projects">
-{% for project in page.projects %}
+{% for project in page.open %}
   <li>
     <a href="{{ project.url }}">
       {{ project.name }}<br />
