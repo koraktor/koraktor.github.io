@@ -4,8 +4,9 @@
   <head>
     <link rel="shortcut icon" href="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7?s=32" type="image/png" />
     <link rel="icon" href="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7?s=32" type="image/png" />
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -19,10 +20,10 @@
   <body>
     <div class="container">
       <div class="row">
-        <div id="content" class="span6 offset3">
+        <div id="content" class="col-md-6 col-md-offset-3">
           {{ content }}
         </div>
-        <div id="sidebar" class="span2 offset10" data-spy="affix" data-offset-top="0">
+        <div id="sidebar" class="col-md-2" data-spy="affix" data-offset-top="0">
           <script data-gratipay-username="koraktor"
                   src="//grtp.co/v1.js"></script>
           <script id='fbvwpym'>
@@ -31,7 +32,7 @@
         </div>
       </div>
       <div class="row">
-        <div id="footer" class="span6 offset3">
+        <div id="footer" class="col-md-6 col-md-offset-3">
           {{ site.time | date: "%Y" }} – Sebastian Staudt
         </div>
       </div>
