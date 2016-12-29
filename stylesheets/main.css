@@ -3,7 +3,6 @@ body {
   color:       #222222;
   font-family: Sans-Serif;
   font-size:   12pt;
-  /*margin-top:  0px;*/
 }
 
 div#content a {
@@ -21,14 +20,10 @@ div#content a:link, div#content a:visited {
 
 div#avatar {
   border-radius: 5px;
+  box-shadow:    0 0 5px 5px #ffffff;
   float:         right;
   height:        80px;
   width:         80px;
-
-  -moz-border-radius:    5px;
-  -moz-box-shadow:       0 0 5px 5px #ffffff;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow:    0 0 5px 5px #ffffff;
 }
 
 div#content {
@@ -45,9 +40,6 @@ div#footer {
   padding:       0px 23px 0px 22px;
   text-align:    center;
   text-shadow:   #333333 1px 1px 1px;
-
-  -moz-border-radius:    0 0 5px 5px;
-  -webkit-border-radius: 0 0 5px 5px;
 }
 
 div#sidebar {
@@ -92,8 +84,6 @@ ul li a {
 ul li a:hover {
   background:    #666666;
   border-radius: 5px;
-
-  -moz-border-radius: 5px;
 }
 
 ul.projects li {
