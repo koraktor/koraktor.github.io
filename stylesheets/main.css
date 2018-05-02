@@ -42,15 +42,6 @@ div#footer {
   text-shadow:   #333333 1px 1px 1px;
 }
 
-div#sidebar {
-  padding-top: 5em;
-  text-align:  center;
-}
-
-.FlattrButton {
-  margin-top: 2em;
-}
-
 div.text {
   text-align: justify;
 }
