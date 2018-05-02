@@ -16,7 +16,7 @@ urls:
 
     {% for url in page.urls %}
     <url>
-        <loc>http://koraktor.de/{{ url }}</loc>
+        <loc>https://koraktor.de/{{ url }}</loc>
     </url>
     {% endfor %}
 
